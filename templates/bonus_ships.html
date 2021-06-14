@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+		<title>Ships</title>
+	<head>
+	<body>
+		<p>Hello!! {{g.user[1]}}  </p>
+		<p>Give X and Y coordination, an X number greater than 7 restarts the battle </p>
+		<form method="POST">
+			<p>
+
+			<input type="number" name="x" size="5" placeholder="X" min="0" required />
+			<input type="number" name="y" size="5" placeholder="Y" min="0" max="7" required />
+			</p>
+			<p>
+			<button type="submit">Send to Sense-HAT</button>
+			</p>
+		</form>
+
+		</p>Score : {{blue_pixels}}</p>
+		{% if blue_pixels >9 %}
+			<p>Game Over!!!</p>
+		{% endif %}
+		<p><a href="/bonus_ships">Refresh</a></p>
+		<p><a href="/">Main page</a></p>
+	</body>
+</html>

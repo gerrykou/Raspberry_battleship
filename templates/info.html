@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+		<title>Sensors Data</title>
+	<head>
+	<body>
+		<p>Hello!! {{g.user[1]}}  </p>
+		<p>Temperature: {{ roundv(g.s.temperature,2) }} Celsius</p>
+		<p>Humidity: {{ roundv(g.s.humidity,1) }} %</p>
+		<p>Barometric pressure: {{ roundv(g.s.pressure,3) }} mbar </p>
+
+		<p><a href="/">Main page</a></p>
+	</body>
+</html>
