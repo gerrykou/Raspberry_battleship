@@ -7,8 +7,10 @@ s=SenseHat()
 
 users=[]
 
-users.append([1,'Giannis','kodikos_Gianni'])
-users.append([2,'Maria','kodikos_Marias'])
+users.append(users_list[0])
+users.append(users_list[1])
+users.append(users_list[2])
+
 
 app = Flask(__name__)
 
